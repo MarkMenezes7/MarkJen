@@ -1,0 +1,24 @@
+pipeline {
+    agent any
+    
+    stages {
+        stage('Hello') {
+            steps {
+                echo 'Hello World from Jenkins!'
+                echo 'This is my first pipeline'
+            }
+        }
+        
+        stage('Build') {
+            steps {
+                echo 'Building...'
+            }
+        }
+        
+        stage('Test') {
+            steps {
+                echo 'Testing...'
+            }
+        }
+    }
+}
